@@ -36,27 +36,6 @@ class _AddMaintenanceFormState extends State<AddMaintenanceForm> {
       selectedPriority = 'Low Priority'; // Default to 'Low Priority'
     }
   }
-
-  // Pick image from the gallery
-  // Future<void> _pickImageFromGallery() async {
-  //   final pickedFile = await _picker.pickImage(source: ImageSource.gallery);
-  //   if (pickedFile != null) {
-  //     setState(() {
-  //       _selectedImage = File(pickedFile.path);
-  //     });
-  //   }
-  // }
-  //
-  // // Pick image from the camera
-  // Future<void> _pickImageFromCamera() async {
-  //   final pickedFile = await _picker.pickImage(source: ImageSource.camera);
-  //   if (pickedFile != null) {
-  //     setState(() {
-  //       _selectedImage = File(pickedFile.path);
-  //     });
-  //   }
-  // }
-
   @override
   Widget build(BuildContext context) {
     return Column(

@@ -1,9 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:riedberg_admin_app/core/helper_functions/build_app_bar.dart';
-import 'package:riedberg_admin_app/core/helper_functions/cache_helper.dart';
-import 'package:riedberg_admin_app/core/helper_functions/navigation_extension.dart';
-import 'package:riedberg_admin_app/core/utils/colors/app_colors.dart';
 import 'package:riedberg_admin_app/core/utils/exports.dart';
+import 'package:riedberg_admin_app/features/layout/main/screens/appointment/screens/add_new_appointment_screen.dart';
 import 'package:riedberg_admin_app/features/layout/main/screens/appointment/widgets/get_all_appointments_body.dart';
 
 class GetAllAppointmentScreen extends StatelessWidget {
@@ -29,7 +25,9 @@ class GetAllAppointmentScreen extends StatelessWidget {
         title: 'Appointments',
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              context.pushNamed(AddNewAppointmentScreen.routeName);
+            },
             icon: const Icon(Iconsax.add_circle, color: AppColors.primaryColor),
           ),
         ],

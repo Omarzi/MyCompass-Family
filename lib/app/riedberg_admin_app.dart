@@ -14,8 +14,8 @@ class RiedbergAdminApp extends StatelessWidget {
         title: 'Riedberg User',
         // initialRoute: ForgetPasswordOtpScreen.routeName,
         onGenerateRoute: onGenerateRoute,
-        // initialRoute: SplashScreen.routeName,
-        initialRoute: LayoutScreen.routeName,
+        initialRoute: SplashScreen.routeName,
+        // initialRoute: LayoutScreen.routeName,
         // initialRoute: LoginScreen.routeName,
       )
     );
